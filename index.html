@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Be My Valentine ❤️</title>
+    <title>Valentýn </title>
     <style>
         body {
             margin: 0;
@@ -52,9 +52,9 @@
 <body>
 
     <div class="card">
-        <h1>Will you be my Valentine? 💘</h1>
-        <button id="yes" onclick="yesClick()">Yes 💖</button>
-        <button id="no">No 💔</button>
+        <h1>Budeš moje valentýnka? 💘</h1>
+        <button id="yes" onclick="yesClick()">Anoo 💖</button>
+        <button id="no">Ne 💔</button>
     </div>
 
     <script>
@@ -71,23 +71,56 @@
             noBtn.style.top = randomY + "px";
         });
 
-        function yesClick() {
-            document.body.innerHTML = `
-                <div style="
-                    height:100vh;
-                    display:flex;
-                    justify-content:center;
-                    align-items:center;
-                    flex-direction:column;
-                    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
-                    font-family: 'Comic Sans MS', cursive;
-                    text-align:center;
-                ">
-                    <h1 style="color:#ff4d6d;">YAAAY 💕🥰</h1>
-                    <p style="font-size:24px;">Best Valentine ever ❤️</p>
-                </div>
-            `;
-        }
+function yesClick() {
+    document.body.innerHTML = `
+        <style>
+            body {
+                margin: 0;
+                height: 100vh;
+                background: radial-gradient(circle at top, #7a001f, #12000a);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Arial', sans-serif;
+                color: #f1c6d3;
+            }
+
+            .valentine {
+                text-align: center;
+                background: rgba(0,0,0,0.4);
+                padding: 50px;
+                border-radius: 20px;
+                box-shadow: 0 0 40px rgba(255, 0, 80, 0.4);
+                backdrop-filter: blur(6px);
+            }
+
+            h1 {
+                font-size: 42px;
+                letter-spacing: 2px;
+                margin-bottom: 20px;
+                color: #ff4d6d;
+            }
+
+            p {
+                font-size: 18px;
+                opacity: 0.8;
+                margin-bottom: 30px;
+            }
+
+            img {
+                width: 260px;
+                border-radius: 16px;
+                box-shadow: 0 0 30px rgba(255, 77, 109, 0.6);
+            }
+        </style>
+
+        <div class="valentine">
+            <h1>JUPÍÍÍÍ</h1>
+            <p>MILUJU TĚĚ</p>
+            <img src="i-love-you-gif-1.gif" alt="love gif">
+        </div>
+    `;
+}
     </script>
 
 </body>
